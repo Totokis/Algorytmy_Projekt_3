@@ -49,16 +49,10 @@ while Q:
     mn = int(d[Q[0].get_id()])
     for node in Q:
         ind = node.get_id()
-        #print(d)
         if d[node.get_id()] < mn:
-            print("tutaaaaj")
             mn = d[node.get_id()]
             i = counter
         counter+=1
-    
-    print(str(mn)+"###########")
-    print(str(i)+"###########")
-    print(Q[i].get_id())
     
     S.append(Q.pop(i))#przeniesienie wierzchołka z Q do S o najmniejszym koszcie dojścia
 
@@ -72,13 +66,10 @@ while Q:
                 
         else:
             continue
-    print("-----------------------------")
-    print(Q)
-    print("-----------------------------")
-    print(S)
-    print("-----------------------------")
-    print("[0, 1, 2, 3, 4, 5]")
-    print(d)
-    print(p)
-    print("-----------------------------")
+
+print("-----------------------------")
+print("ID[0, 1, 2, 3, 4, 5]")
+print("d:"+str(d))
+print("p:"+str(p))
+print("-----------------------------")
 
